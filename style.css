@@ -1,0 +1,2009 @@
+@import url(https://fonts.google.com/specimen/Acme?query=acme);
+
+body {
+  font-family: viga;
+  font-weight: 700;
+  background-color:  rgb(240, 240, 240);
+  width: 100%;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  width: 85%;
+  margin: 1rem auto;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+nav img {
+  width: 50px;
+  height: 60px;
+  opacity: 70%;
+}
+
+#nav div button {
+  position: static;
+  left: 80%;
+}
+
+
+nav ul li {
+  display: inline-block;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+}
+
+#navbarSupportedContent li a {
+  margin: auto 0;
+  justify-content: end;
+  color: #231955;
+  position: relative;
+}
+#navbarSupportedContent li a::after {
+  content: "";
+  background-color: blue;
+  position: absolute;
+  display: block;
+  width: 0%;
+  height: 5px;
+  top: 80%;
+  left: 1px;
+}
+
+#navbarSupportedContent li a:hover::after {
+  width: 100%;
+  transition: 0.4s;
+}
+
+#navbarSupportedContent li a:active {
+  color: blue;
+}
+#navbarSupportedContent li a:focus {
+  color: blue;
+  
+}
+
+
+
+#nav div img {
+  transition: width 0.5s;
+  cursor: pointer;
+  width: 60px;
+}
+#nav div img:hover {
+  width: 62px;
+}
+
+/* MAIN */
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(240, 240, 240);
+}
+
+#row1 {
+  height: max-content;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 7rem auto;
+}
+
+#row1 h1 {
+  font-size: 2.7rem;
+  font-weight: 900;
+  color: #231955;
+}
+
+#row1 p {
+  font-size: 1.3rem;
+  font-weight: 100;
+  color: #0a005f;
+}
+
+#sec1 {
+  width: 100%;
+  background-image: radial-gradient(#220ed1, #1000a0f5);
+  color: antiquewhite;
+}
+
+#sec1 div {
+  width: 50%;
+  margin: 6rem auto;
+  text-align: center;
+  line-height: 2.6rem;
+}
+
+#sec1 div p {
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+#sec1 div h2 {
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 3rem;
+}
+
+#base {
+  position: relative;
+  top: -10%;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 105%;
+  padding: 100px;
+  background-image: linear-gradient(#f0f0f0);
+  border-radius: 1rem;
+  text-align: left;
+  border: 1px solid #1600df7e;
+}
+#base::after {
+  content: "";
+  position: absolute;
+  background-color: #1600df7e;
+  height: 100%;
+  width: 2px;
+  left: 50%;
+  top: 0px;
+  display: block;
+}
+
+#work {
+  display: flex;
+ 
+}
+
+#work1 {
+  width: 50%;
+  
+}
+
+#work1 h2 {
+  font-size: 3.3rem;
+  width: 40%;
+  font-weight: 900;
+  color: #220ed1;
+}
+
+#work p {
+  font-weight: 100;
+}
+
+#work2 {
+  width: 50%;
+ 
+  padding-left: 5rem;
+}
+
+#work2 h2 {
+  font-size: 3.3rem;
+  font-weight: 900;
+  width: 30%;
+  color: #220ed1;
+}
+
+#work p {
+  font-weight: 100;
+}
+
+#work button {
+  margin: 1rem 0;
+  border: 1px solid blue;
+  color: blue;
+  padding: 1rem 3rem;
+  position: relative;
+  cursor: pointer;
+}
+
+#work1 button a {
+  text-decoration: none;
+  color: blue;
+  display: inline-block;
+  width: 100%;
+}
+
+#work2 button a {
+  text-decoration: none;
+  color: blue;
+  display: inline-block;
+  width: 100%;
+}
+
+#work button::before {
+  content: "";
+  width: 0%;
+  height: 10%;
+  background-color: #220ed1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#work button:hover::before {
+  width: 100%;
+  transition: 0.7s;
+}
+
+#work button:focus	 {
+  background-color: hwb(245 83% 0%);
+}
+
+.language {
+  color: #231955;
+  margin: 0 auto;
+  width: 85%;
+}
+
+.language h3{
+  color: rgba(51, 51, 51, 0.616);
+}
+
+
+#lang h3{
+  text-align: left;
+  font-size: 1.3rem;
+  width: 86%;
+ 
+}
+.language p{
+  color: black;
+}
+
+.language ul li{
+  list-style: circle;
+  text-align: left;
+  color: #333;
+  font-weight: 100;
+  width: 180px;
+}
+.language:nth-of-type(2) ul li{
+  list-style: square;
+  text-align: left;
+  color: #333;
+  font-weight: 100;
+  width: 280px;
+  font-size: 1.2rem;
+}
+
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+/* form */
+
+
+
+
+#form {
+  width: 50%;
+  color: #1a135c;
+  font-size: medium;
+}
+
+#form h2 {
+  text-align: center;
+  margin: 2rem;
+  
+}
+
+#form button {
+  display: block;
+  margin: 1rem auto;
+  border: 1px solid #220ed1;
+  color: #220ed1;
+  padding: 0.5rem 3rem;
+  position: relative;
+  text-align: center;
+  border-radius: 1rem/2rem;
+  width: 40%;
+  transition: 0.3s
+}
+
+#form button::before {
+  content: "";
+  width: 0%;
+  height: 10%;
+  background-color: #220ed1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#form button:hover {
+  background-image: radial-gradient(#220ed1, #1000a0f5);
+  color: white;
+  width: 50%;
+}
+
+#form button:focus	 {
+  background-color: hwb(245 83% 0%);
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  height: 3rem;
+  border: none;
+  border-radius: 2rem / 3rem;
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=text]::placeholder , textarea::placeholder{
+  color: #1a1f2b77;
+  padding: 0 0.2rem;
+}
+
+
+
+input[type=text]:focus , textarea:focus{
+  outline: none;
+}
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #0051ff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #00ccff;
+  transition: 0.2s;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+/* FOOTER BABY!!! */
+
+footer {
+  background-image: radial-gradient(#0a0061, #1000a0f5);
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 115rem;
+  
+  padding: 10rem
+}
+
+footer h2 {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.63);
+  font-weight: 200;
+  letter-spacing: 0.5rem;
+  margin: 1rem; 
+}
+
+.footlinks {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.shelf1 ul li{
+  list-style: none;
+}
+
+.shelf1 ul li a {
+  color: #f0f0f0;
+  font-size: 1.2rem; 
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.shelf1 ul li a:hover, a:focus {
+  color: #00ccff;
+}
+
+.wordshelf2 {
+ line-height: 4rem;
+}
+
+.shelf2 ul li{
+  list-style: none;
+}
+
+.shelf2 ul li a {
+  color: #f0f0f0;
+  font-size: 1.2rem; 
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.shelf2 ul li a:hover, a:focus {
+  color: #00ccff;
+}
+
+footer .foot {
+  margin-top: 5rem;
+  width: 100%;
+ 
+  border-top: 1px solid white;
+  
+  color: white;
+}
+
+.foot ul{
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.foot ul li{
+  list-style: none;
+}
+
+.foot ul li a{
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+
+/* WORK HTML X */
+.main {
+  margin: 4rem auto;
+  width: 100%;
+  text-align: center;
+  min-height: 240vh;
+}
+
+.main .text {
+  line-height: 4.5rem;
+}
+
+.main .text p{
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+.main .text p a{
+  text-decoration: none;
+}
+
+.picsite {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 80vh;
+  align-content: space-around;
+}
+
+.picsite img{
+  width: 400px;
+  height: 240px;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.footer {
+  margin: 7rem 0;
+  padding: 2rem;
+}
+
+.main .collab {
+  margin: 7rem 0;
+  font-size: 1rem;
+}
+
+.main .collab p {
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.main .collab h2 {
+  font-weight: 100;
+  line-height: 3rem;
+  font-size: 1.5rem;
+}
+
+
+.main .collab a {
+  color: blue;
+  line-height: 7rem;
+  text-decoration: none;
+  border: 1px solid blue;
+  padding: 1rem 6rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 100;
+ 
+}
+
+.main .collab a:hover {
+  background-color:blue ;
+  border: none;
+  color: white;
+}
+
+.section2 {
+  min-height: 200vh ;
+}
+
+.testimonial {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.testimonial h2 {
+  font-weight: 200;
+  line-height: 3rem;
+}
+.testimonial p {
+  font-weight: 50;
+  line-height: 2.4rem;
+  font-size: larger;
+}
+
+.testimonial img {
+  width: 15%;
+  margin: 2rem;
+}
+
+/* IMAGE */
+
+.img1 {
+  position: relative;
+ 
+}
+
+
+
+.img1 p {
+  position: absolute;
+  width: 400px;
+  height: 240px;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 3rem 2rem;
+  font-size: 1.1rem;
+  background-color: #231955;
+  color: white;
+  border-radius: 1rem;
+  font-weight: 100;
+  transition: 0.4s;
+  opacity: 0;
+}
+
+.img1 p:hover{
+ opacity: 100%;
+}
+
+
+.img1 p a {
+  display: block;
+  border: 1px solid white;
+  color: white;
+  width: 50%;
+  padding: 0.3rem 1rem;
+  margin: 1.5rem auto;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  transition: 0.2s;
+}
+
+.img1 p a:hover {
+  background-image: radial-gradient(#231955,blue) ;
+  border: none;
+}
+
+
+
+/* starter  */
+
+.img2 {
+  position: relative;
+ 
+}
+
+.img2 p {
+  position: absolute;
+  width: 400px;
+  height: 240px;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 3rem 2rem;
+  font-size: 1.1rem;
+  background-color: #231955;
+  color: white;
+  border-radius: 1rem;
+  font-weight: 100;
+  transition: 0.4s;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.img2 p:hover{
+ opacity: 100%;
+}
+
+
+.img2 p a {
+  display: block;
+  border: 1px solid white;
+  color: white;
+  width: 50%;
+  padding: 0.3rem 1rem;
+  margin: 1.5rem auto;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  transition: 0.2s;
+}
+
+.img2 p a:hover {
+  background-image: radial-gradient(#231955,blue) ;
+  border: none;
+}
+
+/* starter  */
+
+.img3 {
+  position: relative;
+ 
+}
+
+.img3 p {
+  position: absolute;
+  width: 400px;
+  height: 240px;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 3rem 2rem;
+  font-size: 1.1rem;
+  background-color: #231955;
+  color: white;
+  border-radius: 1rem;
+  font-weight: 100;
+  transition: 0.4s;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.img3 p:hover{
+ opacity: 100%;
+}
+
+
+.img3 p a {
+  display: block;
+  border: 1px solid white;
+  color: white;
+  width: 50%;
+  padding: 0.3rem 1rem;
+  margin: 1.5rem auto;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  transition: 0.2s;
+}
+
+.img3 p a:hover {
+  background-image: radial-gradient(#231955,blue) ;
+  border: none;
+}
+
+
+/* starter  */
+
+.img4 {
+  position: relative;
+ 
+}
+
+.img4 p {
+  position: absolute;
+  width: 400px;
+  height: 240px;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 3rem 2rem;
+  font-size: 1.1rem;
+  background-color: #231955;
+  color: white;
+  border-radius: 1rem;
+  font-weight: 100;
+  transition: 0.4s;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.img4 p:hover{
+ opacity: 100%;
+}
+
+
+.img4 p a {
+  display: block;
+  border: 1px solid white;
+  color: white;
+  width: 50%;
+  padding: 0.3rem 1rem;
+  margin: 1.5rem auto;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  transition: 0.2s;
+}
+
+.img4 p a:hover {
+  background-image: radial-gradient(#231955,blue) ;
+  border: none;
+}
+
+
+/* starter  */
+
+.img5 {
+  position: relative;
+ 
+}
+
+.img5 p {
+  position: absolute;
+  width: 400px;
+  height: 240px;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 3rem 2rem;
+  font-size: 1.1rem;
+  background-color: #231955;
+  color: white;
+  border-radius: 1rem;
+  font-weight: 100;
+  transition: 0.4s;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.img5 p:hover{
+ opacity: 100%;
+}
+
+
+.img5 p a {
+  display: block;
+  border: 1px solid white;
+  color: white;
+  width: 50%;
+  padding: 0.3rem 1rem;
+  margin: 1.5rem auto;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  transition: 0.2s;
+}
+
+.img5 p a:hover {
+  background-image: radial-gradient(#231955,blue) ;
+  border: none;
+}
+
+
+
+
+/* starter  */
+
+.img6 {
+  position: relative;
+ 
+}
+
+.img6 p {
+  position: absolute;
+  width: 400px;
+  height: 240px;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 3rem 2rem;
+  font-size: 1.1rem;
+  background-color: #231955;
+  color: white;
+  border-radius: 1rem;
+  font-weight: 100;
+  transition: 0.4s;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.img6 p:hover{
+ opacity: 100%;
+}
+
+
+.img6 p a {
+  display: block;
+  border: 1px solid white;
+  color: white;
+  width: 50%;
+  padding: 0.3rem 1rem;
+  margin: 1.5rem auto;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  transition: 0.2s;
+}
+
+.img6 p a:hover {
+  background-image: radial-gradient(#231955,blue) ;
+  border: none;
+}
+
+
+
+/* MEDIA QUERRIES */
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1220px) {
+  #base {
+    position: relative;
+    top: -10%;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 150%;
+    padding: 5rem 0;
+    background-color: rgb(240, 240, 240);
+    border: none;
+  }
+  #base::after {
+    content: "";
+    position: absolute;
+    background-color: #1600df7e;
+    height: 0%;
+    width: 2px;
+    left: 50%;
+    top: 0px;
+    display: block;
+  }
+
+  #work {
+    display: grid;
+  }
+
+  #work2 {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom: 2px solid blue;
+  }
+
+  #work2 h2 {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2rem;
+  
+    font-weight: 900;
+    color: #220ed1;
+    padding-bottom: 2rem;
+  }
+
+  #work1 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid blue;
+    
+  }
+
+  ul {
+    width: 40%;
+  }
+
+  #work1 h2 {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #220ed1;
+    padding-bottom: 2rem;
+  }
+  #sec1 div {
+    width: 80%;
+    margin: 6rem auto;
+    text-align: center;
+    line-height: 2.6rem;
+  }
+
+    .language {
+    color: #231955;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .language h3{
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .language p{
+    color: black;
+    font-size: 1.2rem;
+  }
+
+  #lang{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #lang ul{
+ 
+    margin: 0 auto;
+    
+  }
+
+  #lang h3{
+    text-align: center;
+    font-size: 1.8rem;
+    width: 86%;
+   
+  }
+  
+  .language ul li{
+    list-style: circle;
+    text-align: center;
+    color: #333;
+    font-weight: 100;
+    font-size: 1.5rem;
+  }
+
+/* FORM!!!*/
+
+.form-body {
+    margin: 5rem;
+}
+
+#form {
+  width: 90%;
+  color: #1a135c;
+  font-size: medium;
+}
+
+#form h2 {
+  text-align: center;
+  margin: 2rem;
+  
+}
+
+#form button {
+  display: block;
+  margin: 1rem auto;
+  border: 1px solid #220ed1;
+  color: #220ed1;
+  padding: 0.5rem 3rem;
+  position: relative;
+  text-align: center;
+  border-radius: 1rem/2rem;
+  width: 40%;
+  transition: 0.3s;
+  font-size: 12px;
+}
+
+#form button::before {
+  content: "";
+  width: 0%;
+  height: 10%;
+  background-color: #220ed1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#form button:hover {
+  background-image: radial-gradient(#220ed1, #1000a0f5);
+  color: white;
+  width: 50%;
+}
+
+#form button:focus	 {
+  background-color: hwb(245 83% 0%);
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  height: 3rem;
+  border: none;
+  border-radius: 2rem / 3rem;
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=text]::placeholder , textarea::placeholder{
+  color: #1a1f2b77;
+  padding: 0 0.2rem;
+}
+
+
+
+input[type=text]:focus , textarea:focus{
+  outline: none;
+}
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #0051ff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+footer {
+  background-image: radial-gradient(#0a0061, #1000a0f5);
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 148rem;
+  
+  padding: 5rem
+}
+
+
+footer h2 {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.63);
+  font-weight: 200;
+  letter-spacing: 0.5rem;
+  margin: 1rem; 
+}
+
+.footlinks {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.shelf1 ul li{
+  list-style: none;
+}
+
+.shelf1 ul li a {
+  color: #f0f0f0;
+  font-size: 1.2rem; 
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.shelf1 ul li a:hover, a:focus {
+  color: #00ccff;
+}
+
+.wordshelf2 {
+ line-height: 4rem;
+}
+
+.shelf2 ul li{
+  list-style: none;
+}
+
+.shelf2 ul li a {
+  color: #f0f0f0;
+  font-size: 1.2rem; 
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.shelf2 ul li a:hover, a:focus {
+  color: #00ccff;
+}
+
+footer .foot {
+  margin-top: 5rem;
+  width: 100%;
+ 
+  border-top: 1px solid white;
+  
+  color: white;
+}
+
+.foot ul{
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.foot ul li{
+  list-style: none;
+}
+
+.foot ul li a{
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+
+/* WORK */
+
+
+
+
+.main {
+  margin-top: 3rem;
+  width: 100%;
+  text-align: center;
+  height: 120vh;
+  position: relative;
+}
+
+.main .text {
+  line-height: 2.5rem;
+  height: 1vh;
+}
+
+.main .text p{
+  font-weight: 100;
+  font-size: 1.2rem;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.main .text p a{
+  text-decoration: none;
+}
+
+.main .section2{
+  margin-top: 12rem;
+}
+
+.picsite {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  align-content: space-around;
+}
+
+.picsite div {
+  margin: 0.3rem 0;
+}
+
+.picsite img{
+  width: 320px;
+  height: 240px;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.footer {
+  margin-top: 30rem;
+  padding: 2rem;
+}
+
+.main .collab {
+  margin: 7rem auto;
+  font-size: 1rem;
+  width: 90%;
+}
+
+.main .collab p {
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.main .collab h2 {
+  font-weight: 100;
+  line-height: 3rem;
+  font-size: 1.5rem;
+}
+
+
+.main .collab a {
+  color: blue;
+  line-height: 7rem;
+  text-decoration: none;
+  border: 1px solid blue;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 100;
+ 
+}
+
+.main .collab a:focus {
+  background-color:blue ;
+  border: none;
+  color: white;
+}
+
+section {
+  min-height: 40vh ;
+}
+
+}
+
+
+
+
+
+
+/* Media screen 720px */
+
+
+
+
+
+
+@media (330px <= width <= 500px) {
+  #sec1 div h2{
+    font-size: 1.4rem;
+  }
+
+  #sec1 {
+    	padding: 0;
+  }
+  
+  #sec1 div p{
+    font-size: 1.2rem;
+  }
+
+  #sec1 div {
+    width: 100%;
+    margin: 4rem auto;
+    text-align: center;
+    line-height: 3rem;
+    padding: 2rem;
+  }
+  #base {
+    position: relative;
+    top: -10%;
+    display: block;
+    margin: auto;
+    width: 89%;
+    height: 100px;
+    padding: 5rem 0;
+    background-color: rgb(240, 240, 240);
+    border: none;
+  }
+  #base::after {
+    content: "";
+    position: absolute;
+    background-color: #1600df7e;
+    height: 0%;
+    width: 2px;
+    left: 50%;
+    top: 0px;
+    display: block;
+  }
+  
+  #row1 h1{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  #work {
+    display: grid;
+   
+  }
+
+  #work2 {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    padding: 2rem 0;
+    border-bottom: 2px solid blue;
+  }
+
+  #work2 h2 {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  #work1 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid blue;
+  }
+  #lang h3{
+    text-align: center;
+    font-size: 1.8rem;
+    width: 86%;
+   
+  }
+  
+  #work1 h2 {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  ul {
+    width: 40%;
+  }
+  .language {
+    color: #2b00ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .language h3{
+    text-align: center;
+    font-size: 1.7rem;
+    
+  }
+  
+  .language p{
+    color: black;
+    font-size: 1.2rem;
+  }
+
+  #lang{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #lang ul{
+    width: 80%;
+    margin: 0 auto;
+    text-align: right;
+  }
+  
+  .language ul li{
+    list-style: circle;
+    text-align:left;
+    color: #333;
+    font-weight: 100;
+    font-size: 1.1rem;
+  }
+
+  /* FORM!! */
+
+.form-body {    
+    padding-top: 25rem; 
+    width: 100%;
+    margin: 5rem auto;
+    height: 200vh;
+}
+
+
+#form {
+  width: 100%;
+  color: #1a135c;
+  font-size: medium;
+  margin: 0 auto;
+ 
+}
+
+#form h2 {
+  text-align: center;
+  margin: 2rem;
+  
+}
+
+#form button path{
+  display: none;
+}
+#form button {
+  display: block;
+  margin: 1rem auto;
+  border: 1px solid #220ed1;
+  color: #220ed1;
+  padding: 0.5rem;
+  position: relative;
+  text-align: center;
+  border-radius: 1rem/2rem;
+  width: 80px;
+  transition: 0.3s;
+  
+}
+
+#form button::before {
+  content: "";
+  width: 0%;
+  height: 10%;
+  background-color: #220ed1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#form button:hover{
+
+  background-image: radial-gradient(#220ed1, #1000a0f5);
+  color: white;
+  width: 50%;
+}
+
+#form button:focus	 {
+  background-color: hwb(245 83% 0%);
+  background-image: radial-gradient(#220ed1, #1000a0f5);
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  height: 3rem;
+  border: none;
+  border-radius: 2rem / 3rem;
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=text]::placeholder , textarea::placeholder{
+  color: #1a1f2b77;
+  padding: 0 0.2rem;
+}
+
+
+
+input[type=text]:focus , textarea:focus{
+  outline: none;
+}
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #0051ff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+} 
+
+
+/* FOOTER */
+
+footer {
+  background-image: radial-gradient(#0a0061, #1000a0f5);
+  width: 100%;
+  min-height: 10vh;
+  margin-top: 165rem;
+  padding: 1rem
+}
+
+
+footer h2 {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.63);
+  font-weight: 200;
+  letter-spacing: 0.5rem;
+  margin: 1rem; 
+}
+
+.footlinks {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.shelf1 ul li{
+  list-style: none;
+}
+
+.shelf1 ul li a {
+  color: #f0f0f0;
+  font-size: 1rem; 
+  text-decoration: none;
+  font-weight: 200;
+}
+
+.shelf1 ul li a:hover, a:focus {
+  color: #00ccff;
+}
+
+.wordshelf2 {
+ line-height: 3rem;
+}
+
+.shelf2 ul li{
+  list-style: none;
+}
+
+.shelf2 ul li a {
+  color: #f0f0f0;
+  font-size: 1rem; 
+  text-decoration: none;
+  font-weight: 200;
+  width: 100%;
+}
+
+.shelf2 ul li a:hover, a:focus {
+  color: #00ccff;
+}
+
+footer .foot {
+  margin-top: 5rem;
+  width: 100%;
+ 
+  border-top: 1px solid white;
+  
+  color: white;
+}
+
+.foot ul{
+  width: 100%;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.foot ul li{
+  list-style: none;
+}
+
+.foot ul li a{
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+
+
+
+
+
+/* WORK HTML X */
+
+
+
+
+
+
+.main {
+  margin-top: 3rem;
+  width: 100%;
+  text-align: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.main .text {
+  line-height: 2.5rem;
+  height: 10vh;
+}
+
+.main .text p{
+  font-weight: 100;
+  font-size: 1.2rem;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.main .text p a{
+  text-decoration: none;
+}
+
+.main .section2{
+  margin-top: 35rem;
+  height: 100vh;
+}
+
+.picsite {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  min-height: 80vh;
+  align-content: space-around;
+}
+
+.picsite div {
+  margin: 0.3rem 0;
+}
+
+.picsite img{
+  width: 400px;
+  height: 240px;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.footer {
+  position: absolute;
+  top: 200%;
+  left: 0;
+  min-height: 100vh;
+  margin-top: 100rem;
+  padding: 2rem;
+}
+
+.main .collab {
+  margin: 7rem auto;
+  font-size: 1rem;
+  width: 90%;
+}
+
+.main .collab p {
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.main .collab h2 {
+  font-weight: 100;
+  line-height: 3rem;
+  font-size: 1.5rem;
+}
+
+
+.main .collab a {
+  color: blue;
+  line-height: 7rem;
+  text-decoration: none;
+  border: 1px solid blue;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 100;
+ 
+}
+
+.main .collab a:focus {
+  background-color:blue ;
+  border: none;
+  color: white;
+}
+
+section {
+  min-height: 100vh ;
+}
+
+.testimonial {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.testimonial h2 {
+  font-weight: 200;
+  line-height: 2rem;
+}
+.testimonial p {
+  font-weight: 50;
+  line-height: 2rem;
+  font-size: larger;
+}
+
+.testimonial img {
+  width: 15%;
+  margin: 2rem;
+}
+
+/* IMAGE */
+
+.img1 {
+  position: relative;
+ 
+}
+
+
+
+.img1 p {
+  position: absolute;
+  width: 400px;
+  height: 240px;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 3rem 2rem;
+  font-size: 1.1rem;
+  background-color: #231955;
+  color: white;
+  border-radius: 1rem;
+  font-weight: 100;
+  transition: 0.4s;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.img1 p:hover{
+ opacity: 100%;
+}
+
+
+.img1 p a {
+  display: block;
+  border: 1px solid white;
+  color: white;
+  width: 50%;
+  padding: 0.3rem 1rem;
+  margin: 1.5rem auto;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  transition: 0.2s;
+}
+
+.img1 p a:hover {
+  background-image: radial-gradient(#231955,blue) ;
+  border: none;
+}
+
+
+
+/* starter  */
+
+.img2 {
+  position: relative;
+ 
+}
+
+.img2 p {
+  position: absolute;
+  width: 400px;
+  height: 240px;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 3rem 2rem;
+  font-size: 1.1rem;
+  background-color: #231955;
+  color: white;
+  border-radius: 1rem;
+  font-weight: 100;
+  transition: 0.4s;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.img2 p:hover{
+ opacity: 100%;
+}
+
+
+.img2 p a {
+  display: block;
+  border: 1px solid white;
+  color: white;
+  width: 50%;
+  padding: 0.3rem 1rem;
+  margin: 1.5rem auto;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  transition: 0.2s;
+}
+
+.img2 p a:hover {
+  background-image: radial-gradient(#231955,blue) ;
+  border: none;
+}
+
+/* starter  */
+
+.img3 {
+  position: relative;
+ 
+}
+
+.img3 p {
+  position: absolute;
+  width: 400px;
+  height: 240px;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 3rem 2rem;
+  font-size: 1.1rem;
+  background-color: #231955;
+  color: white;
+  border-radius: 1rem;
+  font-weight: 100;
+  transition: 0.4s;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.img3 p:hover{
+ opacity: 100%;
+}
+
+
+.img3 p a {
+  display: block;
+  border: 1px solid white;
+  color: white;
+  width: 50%;
+  padding: 0.3rem 1rem;
+  margin: 1.5rem auto;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  transition: 0.2s;
+}
+
+.img3 p a:hover {
+  background-image: radial-gradient(#231955,blue) ;
+  border: none;
+}
+
+
+/* starter  */
+
+.img4 {
+  position: relative;
+ 
+}
+
+.img4 p {
+  position: absolute;
+  width: 400px;
+  height: 240px;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 3rem 2rem;
+  font-size: 1.1rem;
+  background-color: #231955;
+  color: white;
+  border-radius: 1rem;
+  font-weight: 100;
+  transition: 0.4s;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.img4 p:hover{
+ opacity: 100%;
+}
+
+
+.img4 p a {
+  display: block;
+  border: 1px solid white;
+  color: white;
+  width: 50%;
+  padding: 0.3rem 1rem;
+  margin: 1.5rem auto;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  transition: 0.2s;
+}
+
+.img4 p a:hover {
+  background-image: radial-gradient(#231955,blue) ;
+  border: none;
+}
+
+
+/* starter  */
+
+.img5 {
+  position: relative;
+ 
+}
+
+.img5 p {
+  position: absolute;
+  width: 400px;
+  height: 240px;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 3rem 2rem;
+  font-size: 1.1rem;
+  background-color: #231955;
+  color: white;
+  border-radius: 1rem;
+  font-weight: 100;
+  transition: 0.4s;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.img5 p:hover{
+ opacity: 100%;
+}
+
+
+.img5 p a {
+  display: block;
+  border: 1px solid white;
+  color: white;
+  width: 50%;
+  padding: 0.3rem 1rem;
+  margin: 1.5rem auto;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  transition: 0.2s;
+}
+
+.img5 p a:hover {
+  background-image: radial-gradient(#231955,blue) ;
+  border: none;
+}
+
+
+
+
+/* starter  */
+
+.img6 {
+  position: relative;
+ 
+}
+
+.img6 p {
+  position: absolute;
+  width: 400px;
+  height: 240px;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 3rem 2rem;
+  font-size: 1.1rem;
+  background-color: #231955;
+  color: white;
+  border-radius: 1rem;
+  font-weight: 100;
+  transition: 0.4s;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.img6 p:hover{
+ opacity: 100%;
+}
+
+
+.img6 p a {
+  display: block;
+  border: 1px solid white;
+  color: white;
+  width: 50%;
+  padding: 0.3rem 1rem;
+  margin: 1.5rem auto;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  transition: 0.2s;
+}
+
+.img6 p a:hover {
+  background-image: radial-gradient(#231955,blue) ;
+  border: none;
+}
+}
+
